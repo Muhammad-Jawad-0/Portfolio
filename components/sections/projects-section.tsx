@@ -16,6 +16,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Variants } from "framer-motion";
 
 const projects = [
   {
@@ -43,10 +44,16 @@ const projects = [
     title: "Chat App",
     description:
       "A real-time chat application built with React and Firebase, featuring secure authentication, instant messaging, and cloud-based data storage. Includes support for multiple chat rooms, live status updates, and a clean responsive UI for seamless communication across devices.",
-    image: "/task-management-dashboard-interface.jpg",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
+    image: "/chat-app.PNG",
+    technologies: [
+      "React",
+      "Firebase",
+      "Firestore",
+      "Firebase-Realtime",
+      "tailwind CSS",
+    ],
     githubUrl: "https://github.com/Muhammad-Jawad-0/ChatApp",
-    liveUrl: "https://taskmanager-demo.vercel.app",
+    liveUrl: "https://chat-app-basic-firebase.netlify.app/",
     featured: true,
   },
   {
@@ -62,35 +69,42 @@ const projects = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
+    title: "Blog Platform",
     description:
-      "A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.",
-    image: "/portfolio-website-design.jpg",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX"],
-    githubUrl: "https://github.com/johndoe/portfolio",
-    liveUrl: "https://johndoe.dev",
+      "A content management system for bloggers with markdown support, SEO optimization, and social sharing features.",
+    image: "/blogging-img.PNG",
+    technologies: ["React.js", "Tailwind CSS", "Firebase", "ContextApi"],
+    githubUrl: "https://github.com/Muhammad-Jawad-0/Blogging-App",
+    liveUrl: "https://blogging-app-firebase.netlify.app/",
     featured: false,
   },
   {
     id: 5,
-    title: "Blog Platform",
+    title: "Facebook Clone",
     description:
-      "A content management system for bloggers with markdown support, SEO optimization, and social sharing features.",
-    image: "/blog-platform-interface.jpg",
-    technologies: ["Next.js", "Sanity CMS", "TypeScript", "Vercel"],
-    githubUrl: "https://github.com/johndoe/blog-platform",
-    liveUrl: "https://blog-demo.vercel.app",
+      "A Facebook Clone built with the MERN stack, featuring secure authentication, real-time posts, likes, comments, and profile management with image uploads — delivering a responsive and engaging social media experience.",
+    image: "/fb-img.PNG",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "JavaScript",
+      "Express.js",
+      "Mongodb",
+      "Css3",
+    ],
+    githubUrl: "https://github.com/Muhammad-Jawad-0/Social-Media-UI",
+    liveUrl: "/",
     featured: false,
   },
   {
     id: 6,
     title: "Fitness Tracker",
     description:
-      "A mobile-first fitness tracking application with workout logging, progress visualization, and social features.",
-    image: "/fitness-tracker-mobile-app.jpg",
-    technologies: ["React Native", "Firebase", "Redux", "Chart.js"],
-    githubUrl: "https://github.com/johndoe/fitness-tracker",
-    liveUrl: "https://fitness-demo.vercel.app",
+      "A simple Weather App built with React that fetches real-time weather data from an external API, showing temperature, conditions, and location details with a clean, user-friendly interface.",
+    image: "/weather-imgs.PNG",
+    technologies: ["html", "css", "js", "React.js"],
+    githubUrl: "https://github.com/Muhammad-Jawad-0/React-Weather-App",
+    liveUrl: "https://weather-app-using-react-by-jawad.netlify.app",
     featured: false,
   },
 ];
@@ -106,7 +120,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
