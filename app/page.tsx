@@ -6,7 +6,7 @@ import { ProjectsSection } from "@/components/sections/projects-section"
 import { BlogSection } from "@/components/sections/blog-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { Footer } from "@/components/footer"
-import { ChatIcon } from "@/components/chat-icon"
+// import { ChatIcon } from "@/components/chat-icon"
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      <ChatIcon />
+      {/* <ChatIcon /> */}
     </div>
   )
 }
