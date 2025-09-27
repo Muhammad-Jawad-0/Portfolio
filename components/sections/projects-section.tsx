@@ -98,13 +98,20 @@ const projects = [
   },
   {
     id: 6,
-    title: "Fitness Tracker",
+    title: "Shophub E-Commerce",
     description:
-      "A simple Weather App built with React that fetches real-time weather data from an external API, showing temperature, conditions, and location details with a clean, user-friendly interface.",
-    image: "/weather-imgs.PNG",
-    technologies: ["html", "css", "js", "React.js"],
-    githubUrl: "https://github.com/Muhammad-Jawad-0/React-Weather-App",
-    liveUrl: "https://weather-app-using-react-by-jawad.netlify.app",
+      "ShopHub ek full-featured e-commerce web app hai jo Next.js ka use karke develop kiya gaya hai. Isme responsive UI, product listing, cart management, secure authentication aur smooth checkout system shamil hain. Ye project scalable aur fast performance ke liye optimized hai.",
+    image: "/shophub.PNG",
+    technologies: [
+      "NEXT.js",
+      "React.js",
+      "Tailwindcss",
+      "Node.js",
+      "Express.js",
+      "Mongodb",
+    ],
+    githubUrl: "https://github.com/Muhammad-Jawad-0/E-commerce---ShopHub",
+    liveUrl: "https://shophub-mall.vercel.app",
     featured: false,
   },
 ];
